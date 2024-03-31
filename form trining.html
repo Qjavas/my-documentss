@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #form {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: antiquewhite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .name-box {
+            border: 2px solid;
+            border-radius: 6px;
+            margin-left: 5px;
+
+        }
+
+        .name-box::after {
+            background-color: black;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+
+        #sb {
+            margin-left: 166px;
+            width: 110px;
+            height: 40px;
+            font-size: large;
+            background-color: rgb(255, 3, 3);
+            color: antiquewhite;
+            border: none;
+            border-radius: 10px;
+
+
+        }
+
+        #gs {
+            width: 70px;
+            height: 20px;
+            font-size: 15px;
+            background-color: rgb(255, 3, 3);
+            color: antiquewhite;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #abt {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="form">
+        <div id="form">
+            <form action="" autocomplete="off">
+                <fieldset id="personal-info">
+                    <legend>Personal info</legend>
+                    <label for="check" class="pointer">Enter Your Name :</label> <br> <br>
+                    <input type="text" id="check" name="name" value="" class="name-box">
+                    <br>
+                    <br>
+                    <input type="radio" id="name" name="name-box-check" value="i did it">
+                    <label for="name" id="name" class="pointer">i did it!</label>
+                </fieldset>
+
+                <hr>
+                <br>
+                <h2>Chose One Gender :</h2>
+
+                <fieldset style="border: none;">
+                    <input type="radio" id="ch" name="gender" value=" men">
+                    <label for="ch" class="pointer">men</label>
+                    <br>
+                    <input type="radio" id="chh" name="gender" value=" women">
+                    <label for="chh" class="pointer">woman</label>
+                    <br>
+                    <input type="radio" id="chc" name="gender" value="none">
+                    <label for="chc" class="pointer">none</label>
+                    <br>
+                    <br>
+                </fieldset>
+
+                <input type="submit" value="Send Data ! " class="pointer" id="sb" ;>
+                <hr>
+
+
+                <br>
+                <select name="gender-seliction" id="gs">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="none" selected>None</option>
+                </select>
+                <br>
+
+                <textarea name="about" id="abt" cols="30" rows="10"> ... </textarea>
+                <input type="submit" value="Send Data ! " class="pointer" id="sb" ;>
+
+                <br>
+                <hr>
+                <br>
+                <h2>choose your favarite Programming Language :</h2>
+                <label for="fpl">Programming Language : </label><br>
+                <br>
+                <input type="text" name="programming language" value="" id="fpl" list="pl">
+                <datalist id="pl">
+                    <option value="HTMl5">HTML5</option>
+                    <option value="css">Css</option>
+                    <option value="python">Python</option>
+                    <option value="php">PHP</option>
+                    <option value="rust">rust</option>
+                    <option value="javascript">javaScript</option>
+                </datalist>
+
+
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
